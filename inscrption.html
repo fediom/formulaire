@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'Inscription</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+        }
+        label, input {
+            display: block;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulaire d'Inscription</h1> <Formulaire d'Inscription>
+
+    <form action="inscription.php" method="post" id="formulaire">
+        <label for="nom">Nom</label>
+        <input type="text" name="nom" id="nom" placeholder="Nom" />
+    
+        <label for="prenom">Prénom</label>
+        <input type="text" name="prenom" id="prenom" placeholder="Prénom" />
+    
+        <label for="telephone">Téléphone</label>
+        <input type="tel" name="telephone" id="telephone" placeholder="Téléphone" />
+    
+        <label for="motDePasse">Mot de passe</label>
+        <input type="password" name="motDePasse" id="motDePasse" placeholder="Mot de passe" />
+    
+        <label for="motDePasseConfirm">Confirmation du mot de passe</label>
+        <input type="password" name="motDePasseConfirm" id="motDePasseConfirm" placeholder="Confirmation du mot de passe" />
+    
+        <input type="submit" value="S'inscrire" />
+    </form>
+
+    <script src="inscription.js"></script>
+</body>
+</html>
